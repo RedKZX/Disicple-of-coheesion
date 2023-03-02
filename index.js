@@ -39,3 +39,13 @@ client.on('message', (channel, user, message, self) => {
     }
 });
 
+//Clan
+
+client.on('message', (channel, user, message, self) => {
+    if(self) return;
+
+    if(message == '!clan') {
+        client.say(channel, `@${user.username}, Join Claritys' discord for notifications! https://discord.gg/clarityd2`);
+    }
+});
+
